@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cars UI</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <script
+      src="https://kit.fontawesome.com/a8611c3a1b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <img
+          style="
+            margin-left: 2px;
+            border-radius: 30%;
+            height: 60px;
+            width: 70px;
+            background-color: black;
+          "
+          src="https://media.istockphoto.com/photos/generic-modern-suv-car-in-concrete-garage-picture-id1307086567?b=1&k=20&m=1307086567&s=170667a&w=0&h=NjcM6LIOkmfhyqH-zrbFU7pHCPxIABvNhWaOElm_P-E="
+          alt=""
+        />
+        <!-- https://carsales.pxcrush.net/car/spec/S00061BW.jpg?pxc_method=gravityfill&pxc_bgtype=self&pxc_size=720,480&watermark=1900147745 -->
+
+        <a
+          style="font-family: 'Baloo Bhai 2', cursive; font-size: 40px"
+          class="navbar-brand"
+          href="index.html"
+          >Cars UI</a
+        >
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+              Cars UI
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="toyota.html">Toyota</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hyundai.html">Hyundai</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="suzuki.html">Suzuki</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tata.html">Tata Motors </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  More Options
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li>
+                    <a
+                      href="https://www.cardekho.com/mostpopularcars"
+                      class="dropdown-item"
+                      href="#"
+                      >Models</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="purchase.html">Purchase</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a href="contact.html" class="dropdown-item" href="#"
+                      >Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <a href="https://www.cars.com/"
+                ><button class="btn btn-outline-danger" type="submit">
+                  Search
+                </button></a
+              >
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <br /><br /><br />
+    <br />
+    <section id="tata">
+        <div class="container">
+          <strong
+            ><h1
+              style="
+                font-family: 'Baloo Bhai',cursive;
+                font-size: 50px;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              Tata Motors
+            </h1></strong
+          >
+          <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+              <div class="col-10 col-sm-8 col-lg-6">
+                <img src="https://images.hindustantimes.com/auto/img/2022/02/01/1600x900/Tata_Motors_cars_1643695467717_1643695479245.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+              </div>
+              <div class="col-lg-6">
+                <h1 class="display-5 fw-bold lh-1 mb-3">Tata</h1>
+                <p class="lead">Our manufacturing facilities are certified for world-class manufacturing and quality standards. We have state-of-the-art technology backed by passionate engineering, quality talent and focus on automation and technology.Tata Motors vehicles offer global styling, enhanced driving comfort and fuel efficiency. Our design units in Coventry (UK), Turin (Italy), and Pune (India) ensure our vehicles are both trendy and trustworthy.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                  <a href="https://www.tatamotors.com/media/gallery/"><button type="button" class="btn btn-outline-warning btn-lg px-4 me-md-2">Gallery</button></a>
+                  <a href="https://www.google.com/search?rlz=1C1RXQR_enIN981IN981&tbs=lf:1,lf_ui:4&tbm=lcl&sxsrf=ALiCzsao8_FYM2XYmNs8oD_0C_KqEWWxKQ:1658993954242&q=tata+motors&rflfq=1&num=10&sa=X&ved=2ahUKEwi4z86Kipv5AhXWxDgGHR58BBMQjGp6BAhhEAI&biw=1366&bih=625&dpr=1#rlfi=hd:;si:;mv:[[30.429632899999998,77.3383863],[29.469142100000003,76.3451923]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!2m1!1e3!3sIAE,lf:1,lf_ui:4"><button type="button" class="btn btn-outline-secondary btn-lg px-4">Dealers</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          
+          
+    
+
+      
+        <div class="container">
+        <div>
+          <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold"></h1>
+            <p >
+              Tata Motors Limited is an Indian multinational automotive manufacturing company, headquartered in the city of Mumbai, India which is part of Tata Group. The company produces passenger cars, trucks, vans, coaches, buses, luxury cars, sports cars, construction equipment.
+            </p>
+            <a href="https://www.tatamotors.com/"><button class="btn btn-outline-primary btn-lg" type="button">
+              Visit site
+            </button></a>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+      <div class="card-group">
+        <div class="card">
+          <img style="width:100%;height:auto;" src="https://imgd.aeplcdn.com/0x0/n/cw/ec/39015/punch-exterior-right-front-three-quarter-2.jpeg?isig=0">
+          <div class="card-body">
+            <h5 class="card-title">Punch</h5>
+            <p class="card-text">The indigenous carmaker's latest model, the Tata Punch, is what one could call a mini SUV. It's a sub-compact SUV and, at first glance, comes across as a spacious well-designed vehicle with modern up-to-date elements and functionality.Tata Punch. Tata Punch is a 5 seater Compact SUV available in a price range of ₹ 5.93 - 9.49 Lakh. It is available in 22 variants, 1199 cc engine option.</p>
+            <p class="card-text"><small class="text-muted"></small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img style="width:100%;height:auto;" src="https://media.zigcdn.com/media/model/2021/Feb/tata-nexon-4_360x240.jpg">
+          <div class="card-body">
+            <h5 class="card-title">Nexon</h5>
+            <p class="card-text">Tata Nexon has been loved enormously for its unique advantages such as turbocharged powertrains and best safety features across all variants. With the Nexon continuing to rule the compact SUV market, you might be wondering what makes it one of the most successful cars in India.Tata Nexon is a 5 seater SUV available in a price range of Rs. 7.60 - 13.95 Lakh*. It is available in 68 variants, 2 engine options that are BS6 compliant.</p>
+            <p class="card-text"><small class="text-muted"></small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img style="width:100%;height:auto;" src="https://images.moneycontrol.com/static-mcnews/2020/02/gravitas-banner-desktop.jpg?impolicy=website&width=770&height=431">
+          <div class="card-body">
+            <h5 class="card-title">Gravitas</h5>
+            <p class="card-text">The Tata Gravitas is expected to launch in January 2021 after it was showcased at the Auto Expo 2020 in a production-ready form. It is a three-row version of the regular Harrier, with minor changes. Here is its first spy shot sans camouflage. Only the rear portion of the Gravitas is visible in this spy shot.And we expect its pricing to start at Rs 15 lakh ex-showroom if it comes in the base XE trim. But spec for spec, expect the new Safari to cost around a lakh more than the Tata Harrier.</p>
+            <p class="card-text"><small class="text-muted"></small></p>
+          </div>
+        </div>
+      </div>
+      </div></div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <footer>
+      <div
+        class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+      >
+        <div class="container">
+          <p>© 2022 Jatin Saini, Inc. All rights reserved.</p>
+        </div>
+        <ul class="list-unstyled d-flex"></ul>
+        <div
+          style="font-size: 65px; align-items: center; justify-content: center"
+          class="container"
+        >
+          <a href="index.html"
+            ><i style="color: black" class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="index.html"
+            ><i style="color: black" class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="index.html"
+            ><i style="color: black" class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="index.html"
+            ><i style="color: black" class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

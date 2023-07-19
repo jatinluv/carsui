@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cars UI</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <script
+      src="https://kit.fontawesome.com/a8611c3a1b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <img
+          style="
+            margin-left: 2px;
+            border-radius: 30%;
+            height: 60px;
+            width: 70px;
+            background-color: black;
+          "
+          src="https://media.istockphoto.com/photos/generic-modern-suv-car-in-concrete-garage-picture-id1307086567?b=1&k=20&m=1307086567&s=170667a&w=0&h=NjcM6LIOkmfhyqH-zrbFU7pHCPxIABvNhWaOElm_P-E="
+          alt=""
+        />
+        <!-- https://carsales.pxcrush.net/car/spec/S00061BW.jpg?pxc_method=gravityfill&pxc_bgtype=self&pxc_size=720,480&watermark=1900147745 -->
+
+        <a
+          style="font-family: 'Baloo Bhai 2', cursive; font-size: 40px"
+          class="navbar-brand"
+          href="index.html"
+          >Cars UI</a
+        >
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+              Cars UI
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="toyota.html">Toyota</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hyundai.html">Hyundai</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="suzuki.html">Suzuki</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tata.html">Tata Motors </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  More Options
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li>
+                    <a
+                      href="https://www.cardekho.com/mostpopularcars"
+                      class="dropdown-item"
+                      href="#"
+                      >Models</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="purchase.html">Purchase</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a href="contact.html" class="dropdown-item" href="#"
+                      >Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <a href="https://www.cars.com/"
+                ><button class="btn btn-outline-danger" type="submit">
+                  Search
+                </button></a
+              >
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <br /><br /><br />
+    <div class="container">
+      <img
+        style="width: 100%; height: auto"
+        src="https://www.asme.org/getmedia/f067b0fa-f5f7-403b-ae37-a66811acfcea/Improving-the-Internal-Combustion-Engine_hero.jpg.aspx?width=460&height=360&ext=.jpg"
+        alt=""
+      />
+    </div>
+    <div class="container my-5">
+      <strong><h1>Internal Combustion Engine</h1></strong>
+      <p>
+        Internal combustion engines provide outstanding drivability and
+        durability, with more than 250 million highway transportation vehicles
+        in the United States relying on them. Along with gasoline or diesel,
+        they can also utilize renewable or alternative fuels (e.g., natural gas,
+        propane, biodiesel, or ethanol). They can also be combined with hybrid
+        electric powertrains to increase fuel economy or plug-in hybrid electric
+        systems to extend the range of hybrid electric vehicles. HOW DOES AN
+        INTERNAL COMBUSTION ENGINE WORK? Combustion, also known as burning, is
+        the basic chemical process of releasing energy from a fuel and air
+        mixture. In an internal combustion engine (ICE), the ignition and
+        combustion of the fuel occurs within the engine itself. The engine then
+        partially converts the energy from the combustion to work. The engine
+        consists of a fixed cylinder and a moving piston. The expanding
+        combustion gases push the piston, which in turn rotates the crankshaft.
+        Ultimately, through a system of gears in the powertrain, this motion
+        drives the vehicle’s wheels. There are two kinds of internal combustion
+        engines currently in production: the spark ignition gasoline engine and
+        the compression ignition diesel engine. Most of these are four-stroke
+        cycle engines, meaning four piston strokes are needed to complete a
+        cycle. The cycle includes four distinct processes: intake, compression,
+        combustion and power stroke, and exhaust. Spark ignition gasoline and
+        compression ignition diesel engines differ in how they supply and ignite
+        the fuel. In a spark ignition engine, the fuel is mixed with air and
+        then inducted into the cylinder during the intake process. After the
+        piston compresses the fuel-air mixture, the spark ignites it, causing
+        combustion. The expansion of the combustion gases pushes the piston
+        during the power stroke. In a diesel engine, only air is inducted into
+        the engine and then compressed. Diesel engines then spray the fuel into
+        the hot compressed air at a suitable, measured rate, causing it to
+        ignite. IMPROVING COMBUSTION ENGINES Over the last 30 years, research
+        and development has helped manufacturers reduce ICE emissions of
+        criteria pollutants, such as nitrogen oxides (NOx) and particulate
+        matter (PM) by more than 99% to comply with EPA emissions standards.
+        Research has also led to improvements in ICE performance (horsepower and
+        0-60 mph acceleration time) and efficiency, helping manufacturers
+        maintain or increase fuel economy. Learn more about our advanced
+        combustion engine research and development efforts focused on making
+        internal combustion engines more energy efficient with minimal
+        emissions.
+      </p>
+    </div>
+    <footer>
+      <div
+        class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+      >
+        <div class="container">
+          <p>© 2022 Jatin Saini, Inc. All rights reserved.</p>
+        </div>
+        <ul class="list-unstyled d-flex"></ul>
+        <div
+          style="font-size: 65px; align-items: center; justify-content: center"
+          class="container"
+        >
+          <a href="index.html"
+            ><i style="color: black" class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="index.html"
+            ><i style="color: black" class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="index.html"
+            ><i style="color: black" class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="index.html"
+            ><i style="color: black" class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

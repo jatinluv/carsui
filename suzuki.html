@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cars UI</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <script
+      src="https://kit.fontawesome.com/a8611c3a1b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <img
+          style="
+            margin-left: 2px;
+            border-radius: 30%;
+            height: 60px;
+            width: 70px;
+            background-color: black;
+          "
+          src="https://media.istockphoto.com/photos/generic-modern-suv-car-in-concrete-garage-picture-id1307086567?b=1&k=20&m=1307086567&s=170667a&w=0&h=NjcM6LIOkmfhyqH-zrbFU7pHCPxIABvNhWaOElm_P-E="
+          alt=""
+        />
+        <!-- https://carsales.pxcrush.net/car/spec/S00061BW.jpg?pxc_method=gravityfill&pxc_bgtype=self&pxc_size=720,480&watermark=1900147745 -->
+
+        <a
+          style="font-family: 'Baloo Bhai 2', cursive; font-size: 40px"
+          class="navbar-brand"
+          href="index.html"
+          >Cars UI</a
+        >
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+              Cars UI
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="toyota.html">Toyota</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hyundai.html">Hyundai</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="suzuki.html">Suzuki</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tata.html">Tata Motors </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  More Options
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li>
+                    <a
+                      href="https://www.cardekho.com/mostpopularcars"
+                      class="dropdown-item"
+                      href="#"
+                      >Models</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="purchase.html">Purchase</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a href="contact.html" class="dropdown-item" href="#"
+                      >Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <a href="https://www.cars.com/"
+                ><button class="btn btn-outline-danger" type="submit">
+                  Search
+                </button></a
+              >
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <br /><br /><br />
+    <br />
+    <section id="suzuki">
+        <div class="container">
+          <strong
+            ><h1
+              style="
+                font-family: 'Baloo Bhai',cursive;
+                font-size: 50px;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              Suzuki
+            </h1></strong
+          >
+  
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide" data-bs-ride="carousel"
+          >
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img style="width: 100%;height:auto" src="https://cdni.autocarindia.com/ExtraImages/20220420064354_Maruti_Suzuki_Cars_Prices_Hiked_April.jpg">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>Baleno</h1>
+              </div>
+            </div>
+              <div class="carousel-item">
+                <img style="width: 100%;height:auto" src="https://english.cdn.zeenews.com/sites/default/files/2021/11/11/986671-all-new-maruti-suzuki-celerio-2.jpg">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1 style="color: black;">Celerio</h1>
+              </div>
+              </div>
+              <div class="carousel-item">
+                <img style="width: 100%;height:auto" src="https://www.autovista.in/assets/img/new_cars_colour_variants/new-s-cross-colour-caffenine-brown.png">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>S-Cross</h1>
+              </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          </div>
+          <div >
+            <div class="container-fluid py-5">
+              <h1 class="display-5 fw-bold"></h1>
+               <p >
+                Suzuki Motor Corporation (Japanese: スズキ株式会社, Hepburn: Suzuki Kabushiki-Gaisha) is a Japanese multinational corporation headquartered in Minami-ku, Hamamatsu, Japan. Suzuki manufactures automobiles, motorcycles, all-terrain vehicles (ATVs), outboard marine engines, wheelchairs and a variety of other small internal combustion engines. In 2016, Suzuki was the eleventh biggest automaker by production worldwide. Suzuki has over 45,000 employees and has 35 production facilities in 23 countries, and 133 distributors in 192 countries. The worldwide sales volume of automobiles is the world's tenth largest, while domestic sales volume is the third largest in the country.
+              </p>
+             <a href="https://www.marutisuzuki.com/channels/arena/all-cars?form=testdrive&utm_source=google&utm_medium=cpc&utm_campaign=13722748061&utm_term=maruti&utm_content=c&gclid=Cj0KCQjwxIOXBhCrARIsAL1QFCbpBQ7ZyoDLVHiZR4JKkaxod-wcjuUTyt-jJRR2jJmdGzvC5RkW2RIaArYREALw_wcB"> <button class="btn btn-info btn-lg" type="button">
+                More
+              </button></a>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+        <div class="card-group">
+          <div class="card">
+            <img src="https://cdni.autocarindia.com/ExtraImages/20200409084541_Swift.jpg">
+            <div class="card-body">
+              <h5 class="card-title">Swift</h5>
+              <p class="card-text">Maruti Swift. Maruti Swift is a 5 seater Hatchback available in a price range of ₹ 5.91 - 8.84 Lakh. It is available in 9 variants, 1197 cc engine option.During its decade-long journey in the car market, 'Maruti Swift' has created tremendous brand value among car owners in India. This is one of the reasons why Maruti Swift is one of the most selling hatchbacks in India.</p>
+              <p class="card-text"><small class="text-muted"></small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://i.ibb.co/ZS2B45X/maruti-suzuki-dzire.jpg">
+            <div class="card-body">
+              <br><h5 class="card-title">Dzire</h5>
+              <p class="card-text">Maruti Suzuki Dzire price starts at ₹ 6.23 Lakh and goes upto ₹ 9.17 Lakh (Avg. ex-showroom). Dzire comes in 9 variants.Maruti Suzuki Dzire is available in 6 exciting colours and 4 models - LXI, VXI, ZXI, and ZXI+ with advanced K-series Dualjet, Dual VVT engine.</p>
+              <p class="card-text"><small class="text-muted"></small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="http://im.rediff.com/money/2013/jan/14wagonr1.jpg">
+            <div class="card-body">
+              <h5 class="card-title">Wagnor</h5>
+              <p class="card-text">Maruti Suzuki WagonR hatchback Car is available in 6 exciting colours, 3 models - Lxi, Vxi, Zxi and 1.0L, 1.2L Engine option.Maruti Wagon R is a 5 seater Hatchback available in a price range of Rs. 5.47 - 7.20 Lakh*. It is available in 11 variants, 2 engine options that are BS6 </p>
+              <p class="card-text"><small class="text-muted"></small></p>
+            </div>
+          </div>
+        </div>
+        </div></div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <footer>
+      <div
+        class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+      >
+        <div class="container">
+          <p>© 2022 Jatin Saini, Inc. All rights reserved.</p>
+        </div>
+        <ul class="list-unstyled d-flex"></ul>
+        <div
+          style="font-size: 65px; align-items: center; justify-content: center"
+          class="container"
+        >
+          <a href="index.html"
+            ><i style="color: black" class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="index.html"
+            ><i style="color: black" class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="index.html"
+            ><i style="color: black" class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="index.html"
+            ><i style="color: black" class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

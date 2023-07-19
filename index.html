@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cars UI</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <script
+      src="https://kit.fontawesome.com/a8611c3a1b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <img
+          style="
+            margin-left: 2px;
+            border-radius: 30%;
+            height: 60px;
+            width: 70px;
+            background-color: black;
+          "
+          src="https://media.istockphoto.com/photos/generic-modern-suv-car-in-concrete-garage-picture-id1307086567?b=1&k=20&m=1307086567&s=170667a&w=0&h=NjcM6LIOkmfhyqH-zrbFU7pHCPxIABvNhWaOElm_P-E="
+          alt=""
+        />
+        <!-- https://carsales.pxcrush.net/car/spec/S00061BW.jpg?pxc_method=gravityfill&pxc_bgtype=self&pxc_size=720,480&watermark=1900147745 -->
+
+        <a
+          style="font-family: 'Baloo Bhai 2', cursive; font-size: 40px"
+          class="navbar-brand"
+          href="index.html"
+          >Cars UI</a
+        >
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+              Cars UI
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="toyota.html">Toyota</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hyundai.html">Hyundai</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="suzuki.html">Suzuki</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tata.html">Tata Motors </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  More Options
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li>
+                    <a
+                      href="https://www.cardekho.com/mostpopularcars"
+                      class="dropdown-item"
+                      href="#"
+                      >Models</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="purchase.html">Purchase</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a href="contact.html" class="dropdown-item" href="#"
+                      >Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <a href="https://www.cars.com/"
+                ><button class="btn btn-outline-danger" type="submit">
+                  Search
+                </button></a
+              >
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cars UI</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <script
+      src="https://kit.fontawesome.com/a8611c3a1b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <img
+          style="
+            margin-left: 2px;
+            border-radius: 30%;
+            height: 60px;
+            width: 70px;
+            background-color: black;
+          "
+          src="https://media.istockphoto.com/photos/generic-modern-suv-car-in-concrete-garage-picture-id1307086567?b=1&k=20&m=1307086567&s=170667a&w=0&h=NjcM6LIOkmfhyqH-zrbFU7pHCPxIABvNhWaOElm_P-E="
+          alt=""
+        />
+        <!-- https://carsales.pxcrush.net/car/spec/S00061BW.jpg?pxc_method=gravityfill&pxc_bgtype=self&pxc_size=720,480&watermark=1900147745 -->
+
+        <!-- <a
+          style="font-family: 'Baloo Bhai 2', cursive; font-size: 40px"
+          class="navbar-brand"
+          href="#"
+          >Cars UI</a
+        >
+        
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+        
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+              Cars UI
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#toyota1">Toyota</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#hyundai">Hyundai</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#suzuki">Suzuki</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tata">Tata Motors </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  More Options
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a href="https://www.cardekho.com/mostpopularcars" class="dropdown-item" href="#">Models</a></li>
+                  <li><a class="dropdown-item" href="purchase.html">Purchase</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a href="contact.html" class="dropdown-item" href="#">Contact Us</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <a href="https://www.cars.com"><button class="btn btn-outline-danger" type="submit">
+                Search
+              </button></a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav> --> -->
+    <br /><br />
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img
+            src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNhcnN8ZW58MHx8MHx8&w=1000&q=80"
+            class="d-block mx-lg-auto img-fluid"
+            alt="Bootstrap Themes"
+            width="700"
+            height="500"
+            loading="lazy"
+          />
+        </div>
+        <div class="col-lg-6">
+          <h1  class="display-5 fw-bold lh-1 mb-3">
+            Cars-An Overview
+          </h1>
+          <br>
+          <p style="font-family: 'Baloo Bhai 2', cursive;" class="lead">
+            A car (or automobile) is a wheeled motor vehicle that is used for transportation. Most definitions of cars say that they run primarily on roads, seat one to eight people, have four wheels, and mainly transport people instead of goods.Cars have controls for driving, parking, passenger comfort, and a variety of lights. Over the decades, additional features and controls have been added to vehicles, making them progressively more complex. These include rear-reversing cameras, air conditioning, navigation systems, and in-car entertainment.
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <a href="ui.html"><button type="button" class="btn btn-outline-primary btn-lg px-4 me-md-2">
+             User Interface
+            </button></a>
+            <a href="engine.html"><button type="button" class="btn btn-outline-secondary btn-lg px-4">
+              Engine
+            </button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="px-4 pt-5 my-5 text-center border-bottom">
+        <h1 class="display-4 fw-bold">Classification of Cars</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">
+            India has a diverse range of cars available to own but most cars come in one of seven car body types: Hatchback, Sedan, SUV, MUV, Coupe, Convertible, and Pickup Truck.However in this UI, we have classified cars into Electric and Stroke engine.
+          </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+            <a href="stroke.html"><button type="button" class="btn btn-outline-danger btn-lg px-4 me-sm-3">
+             Stroke Engine
+            </button></a>
+            <a href="elecric.html"><button type="button" class="btn btn-outline-secondary btn-lg px-4">
+              Electric
+            </button></a>
+          </div>
+        </div>
+      
+        <div class="overflow-hidden" style="max-height: 30vh">
+          <div class="container px-5">
+            <img
+              src="https://images.squarespace-cdn.com/content/v1/5cf05b2c6564480001e37e08/1559257732845-CETUZZVGGRTGGH43BJ6J/kartik-bhattacharjee-257547-unsplash.jpg"
+              class="img-fluid border rounded-3 shadow-lg mb-4"
+              alt="Example
+            image"
+              width="700"
+              height="500"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </div><hr>
+    <br /><br />
+    
+          </div>
+         <section id="toyota1">
+      <div class="container">
+        <strong
+          ><h1
+            style="
+              font-family: 'Baloo Bhai',cursive;
+              font-size: 50px;
+              align-items: center;
+              justify-content: center;
+            "
+          >
+            Toyota
+          </h1></strong
+        >
+
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide" data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img style="width: 100%;height:auto;"
+                src="https://www.motorbeam.com/wp-content/uploads/Toyota-Fortuner-TRD-Limited-Edition.jpg"
+                class="d-block w-100"
+                alt="https://www.motorbeam.com/wp-content/uploads/Toyota-Fortuner-TRD-Limited-Edition.jpg"
+              />
+              <div
+                style="color: black"
+                class="carousel-caption d-none d-md-block"
+              >
+                <strong><h2>Fortuner</h2></strong>
+                <a href="https://www.toyotabharat.com/campaign/fortuner/?utm_campaign=fortunerao2022&utm_source=google&utm_medium=search&utm_term=cpc&utm_content=ao&agency_code=HAKXX&gclid=Cj0KCQjwxIOXBhCrARIsAL1QFCYs47Gvv3uRzKjRWAmDNFZABWYu76gjDyehlKZRKQNKKV_vdDCe7vEaAuKDEALw_wcB"><button class="btn btn-warning">More Models</button></a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img style="width: 100%;height:auto;"
+                src="https://www.wardsauto.com/sites/wardsauto.com/files/styles/article_featured_retina/public/Toyota%20Corolla%20main%20cropped_0.jpg?itok=D5G2fY-E"
+                class="d-block w-100"
+                alt="https://www.motorbeam.com/wp-content/uploads/Toyota-Fortuner-TRD-Limited-Edition.jpg"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h1>Corolla</h1>
+                <p>
+                 
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img style="width: 100%;height:auto;"
+                src="https://imgd.aeplcdn.com/0x0/n/cw/ec/41217/toyota-vellfire-right-front-three-quarter5.jpeg"
+                class="d-block w-100"
+                alt="https://www.motorbeam.com/wp-content/uploads/Toyota-Fortuner-TRD-Limited-Edition.jpg"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h1 style="color: black;">Vellfire</h1>
+                <p>
+                  
+                </p>
+              </div>
+            </div>
+           <button class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div >
+          <div class="container-fluid py-2">
+            <h1 class="display-5 fw-bold"></h1>
+            <p >
+              Toyota Motor Corporation (commonly known as simply Toyota) is a Japanese multinational automotive manufacturer headquartered in Toyota City, Aichi, Japan. It was founded by Kiichiro Toyoda and incorporated on August 28, 1937. Toyota is one of the largest automobile manufacturers in the world, producing about 10 million vehicles per year.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Toyota"><button class="btn btn-primary btn-lg" type="button">
+              More
+            </button></a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+      <div class="card-group">
+        <div class="card">
+          <img src="https://thenewswheel.com/wp-content/uploads/2014/01/2014-Toyota-FJ-Cruiser.jpg">
+          <div class="card-body">
+            <h5 class="card-title">RAV4</h5>
+            <p class="card-text">In terms of popularity, the RAV4 is Toyota's best-selling vehicle and the best-selling non-pickup truck in the U.S. It boasts a Dynamic Force 2.5-liter inline-four-cylinder engine with an 8-speed Direct-Shift automatic transmission.</p>
+            <p class="card-text"><small class="text-muted"></small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://www.drivespark.com/car-image/640x480x100/car/toyota-glanza-facelift.jpg">
+          <div class="card-body">
+            <h5 class="card-title">Glanza</h5>
+            <p class="card-text">Toyota Glanza is a powerful yet fuel-efficient hatchback car. The 5 seater subcompact car is just as stylish on the inside as it is on the outside.The on-road price of Glanza top model in Delhi is ₹ 9.91 Lakh. The on-road price of Glanza V AMT Petrol is ₹ 9.91 Lakh. The on road price is made up of ex-showroom price, RTO registration, road tax and insurance amount.</p>
+            <p class="card-text"><small class="text-muted"></small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://www.toyoland.com/photos/tundra/2022/uglymobile.jpg">
+          <div class="card-body">
+            <h5 class="card-title">Tundra</h5>
+            <p class="card-text">The 2019 Toyota Tundra is an excellent purchase for anyone looking to get a full-size truck. The performance and reliability of the Tundra are hard to beat. It also provides plenty of safety features to keep you and your passengers protected.</p>
+            <p class="card-text"><small class="text-muted"></small></p>
+          </div>
+        </div>
+      </div>
+      </div></div><hr>
+    </section><br><br><br>
+    <section id="hyundai">
+      <div class="container">
+        <strong
+          ><h1
+            style="
+              font-family: 'Baloo Bhai 2',cursive;
+              font-size: 50px;
+              align-items: center;
+              justify-content: center;
+            "
+          >
+            Hyundai
+          </h1></strong
+        >
+<div class="container">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img style="width: 100%;height:auto;" src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Hyundai/Creta/7695/1651645683867/front-left-side-47.jpg">
+              <div class="carousel-caption d-none d-md-block">
+              
+                <h1 style="color: white;">Creta</h1>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img style="width: 100%;height:auto;" src="https://www.indiacarnews.com/wp-content/uploads/2020/09/Hyundai-i20-N-Line-Design.jpg">
+              <div class="carousel-caption d-none d-md-block">
+                
+                <h1>i20</h1>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img style="width: 100%;height:auto;" src="https://cdni.autocarindia.com/utils/imageresizer.ashx?n=http://cms.haymarketindia.net/model/uploads/modelimages/Hyundai-Alcazar-130720212215.jpg&w=872&h=578&q=75&c=1">
+              <div class="carousel-caption d-none d-md-block">
+                <h1>Alcazar</h1>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        </div>
+        </div>
+        
+      </div>
+      <br><br><br><div class="container">
+      <div class="card-group">
+        <div class="card">
+          <img src="https://cdni.autocarindia.com/ExtraImages/20200330032320_2020-Hyundai-Verna-1.jpg">
+          <div class="card-body">
+            <h5 class="card-title">Verna</h5>
+            <p class="card-text">Hyundai Verna, a sporty sedan with AVN, Airbag & powerful engine. Check out price, specification, new feature. Call 1800-11-4645 to book a test drive for Verna.Hyundai Verna price starts at ₹ 9.40 Lakh and goes upto ₹ 15.44 Lakh (Avg. ex-showroom). Verna comes in 12 variants.
+            </p>
+            <p class="card-text"><small class="text-muted"></small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img style="height: 245px;" src="https://www.hyundai.com/content/dam/hyundai/template_en/en/images/find-a-car/pip/grand-i10/highlights/grand-i10-gallery-side-front-orange-parked-building-original.jpg">
+          <div class="card-body">
+            <h5 class="card-title">Grand i10</h5>
+            <p class="card-text">Hyundai Grand i10 Nios Price: The hatchback retails between Rs 5.39 lakh and Rs 8.02 lakh (ex-showroom Delhi). Hyundai Grand i10 Nios Variants.Hyundai Grand i10 Nios is a 5 seater Hatchback available in a price range of Rs. 5.39 - 8.02 Lakh*. It is available in 13 variants, 2 engine options</p>
+            <p class="card-text"><small class="text-muted"></small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img style="height: 245px;" src="https://static.autox.com/uploads/cars/2019/10/hyundai-elantra-3-oct-2019.jpg">
+          <div class="card-body">
+            <h5 class="card-title">Elantra</h5>
+            <p class="card-text">The Hyundai Elantra is an excellent vehicle, packed with many tech features and gas mileage that will get you to where you want to go in a comfortable, affordable way. If you want a daily commuter car, you can't go wrong with this choice.Hyundai Elantra Powertrain: It is powered by a 2-litre petrol engine (152PS/192Nm), mated to a 6-speed manual or automatic transmission.</p>
+            <p class="card-text"><small class="text-muted"></small></p>
+          </div>
+        </div>
+      </div>
+      </div></div><hr>
+    </section><br><br><br>
+      <section id="suzuki">
+        <div class="container">
+          <strong
+            ><h1
+              style="
+                font-family: 'Baloo Bhai',cursive;
+                font-size: 50px;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              Suzuki
+            </h1></strong
+          >
+  
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide" data-bs-ride="carousel"
+          >
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img style="width: 100%;height:auto" src="https://cdni.autocarindia.com/ExtraImages/20220420064354_Maruti_Suzuki_Cars_Prices_Hiked_April.jpg">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>Baleno</h1>
+              </div>
+            </div>
+              <div class="carousel-item">
+                <img style="width: 100%;height:auto" src="https://english.cdn.zeenews.com/sites/default/files/2021/11/11/986671-all-new-maruti-suzuki-celerio-2.jpg">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1 style="color: black;">Celerio</h1>
+              </div>
+              </div>
+              <div class="carousel-item">
+                <img style="width: 100%;height:auto" src="https://www.autovista.in/assets/img/new_cars_colour_variants/new-s-cross-colour-caffenine-brown.png">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>S-Cross</h1>
+              </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          </div>
+          <div >
+            <div class="container-fluid py-5">
+              <h1 class="display-5 fw-bold"></h1>
+               <p >
+                Suzuki Motor Corporation (Japanese: スズキ株式会社, Hepburn: Suzuki Kabushiki-Gaisha) is a Japanese multinational corporation headquartered in Minami-ku, Hamamatsu, Japan. Suzuki manufactures automobiles, motorcycles, all-terrain vehicles (ATVs), outboard marine engines, wheelchairs and a variety of other small internal combustion engines. In 2016, Suzuki was the eleventh biggest automaker by production worldwide. Suzuki has over 45,000 employees and has 35 production facilities in 23 countries, and 133 distributors in 192 countries. The worldwide sales volume of automobiles is the world's tenth largest, while domestic sales volume is the third largest in the country.
+              </p>
+             <a href="https://www.marutisuzuki.com/channels/arena/all-cars?form=testdrive&utm_source=google&utm_medium=cpc&utm_campaign=13722748061&utm_term=maruti&utm_content=c&gclid=Cj0KCQjwxIOXBhCrARIsAL1QFCbpBQ7ZyoDLVHiZR4JKkaxod-wcjuUTyt-jJRR2jJmdGzvC5RkW2RIaArYREALw_wcB"> <button class="btn btn-info btn-lg" type="button">
+                More
+              </button></a>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+        <div class="card-group">
+          <div class="card">
+            <img src="https://cdni.autocarindia.com/ExtraImages/20200409084541_Swift.jpg">
+            <div class="card-body">
+              <h5 class="card-title">Swift</h5>
+              <p class="card-text">Maruti Swift. Maruti Swift is a 5 seater Hatchback available in a price range of ₹ 5.91 - 8.84 Lakh. It is available in 9 variants, 1197 cc engine option.During its decade-long journey in the car market, 'Maruti Swift' has created tremendous brand value among car owners in India. This is one of the reasons why Maruti Swift is one of the most selling hatchbacks in India.</p>
+              <p class="card-text"><small class="text-muted"></small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://i.ibb.co/ZS2B45X/maruti-suzuki-dzire.jpg">
+            <div class="card-body">
+              <br><h5 class="card-title">Dzire</h5>
+              <p class="card-text">Maruti Suzuki Dzire price starts at ₹ 6.23 Lakh and goes upto ₹ 9.17 Lakh (Avg. ex-showroom). Dzire comes in 9 variants.Maruti Suzuki Dzire is available in 6 exciting colours and 4 models - LXI, VXI, ZXI, and ZXI+ with advanced K-series Dualjet, Dual VVT engine.</p>
+              <p class="card-text"><small class="text-muted"></small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="http://im.rediff.com/money/2013/jan/14wagonr1.jpg">
+            <div class="card-body">
+              <h5 class="card-title">Wagnor</h5>
+              <p class="card-text">Maruti Suzuki WagonR hatchback Car is available in 6 exciting colours, 3 models - Lxi, Vxi, Zxi and 1.0L, 1.2L Engine option.Maruti Wagon R is a 5 seater Hatchback available in a price range of Rs. 5.47 - 7.20 Lakh*. It is available in 11 variants, 2 engine options that are BS6 </p>
+              <p class="card-text"><small class="text-muted"></small></p>
+            </div>
+          </div>
+        </div>
+        </div></div><hr>
+        <section id="tata">
+          <div class="container">
+            <strong
+              ><h1
+                style="
+                  font-family: 'Baloo Bhai',cursive;
+                  font-size: 50px;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                Tata Motors
+              </h1></strong
+            >
+            <div class="container col-xxl-8 px-4 py-5">
+              <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                  <img src="https://images.hindustantimes.com/auto/img/2022/02/01/1600x900/Tata_Motors_cars_1643695467717_1643695479245.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                  <h1 class="display-5 fw-bold lh-1 mb-3">Tata</h1>
+                  <p class="lead">Our manufacturing facilities are certified for world-class manufacturing and quality standards. We have state-of-the-art technology backed by passionate engineering, quality talent and focus on automation and technology.Tata Motors vehicles offer global styling, enhanced driving comfort and fuel efficiency. Our design units in Coventry (UK), Turin (Italy), and Pune (India) ensure our vehicles are both trendy and trustworthy.</p>
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <a href="https://www.tatamotors.com/media/gallery/"><button type="button" class="btn btn-outline-warning btn-lg px-4 me-md-2">Gallery</button></a>
+                    <a href="https://www.google.com/search?rlz=1C1RXQR_enIN981IN981&tbs=lf:1,lf_ui:4&tbm=lcl&sxsrf=ALiCzsao8_FYM2XYmNs8oD_0C_KqEWWxKQ:1658993954242&q=tata+motors&rflfq=1&num=10&sa=X&ved=2ahUKEwi4z86Kipv5AhXWxDgGHR58BBMQjGp6BAhhEAI&biw=1366&bih=625&dpr=1#rlfi=hd:;si:;mv:[[30.429632899999998,77.3383863],[29.469142100000003,76.3451923]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!2m1!1e3!3sIAE,lf:1,lf_ui:4"><button type="button" class="btn btn-outline-secondary btn-lg px-4">Dealers</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            
+            
+      
+
+        
+          <div class="container">
+          <div>
+            <div class="container-fluid py-5">
+              <h1 class="display-5 fw-bold"></h1>
+              <p >
+                Tata Motors Limited is an Indian multinational automotive manufacturing company, headquartered in the city of Mumbai, India which is part of Tata Group. The company produces passenger cars, trucks, vans, coaches, buses, luxury cars, sports cars, construction equipment.
+              </p>
+              <a href="https://www.tatamotors.com/"><button class="btn btn-outline-primary btn-lg" type="button">
+                Visit site
+              </button></a>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+        <div class="card-group">
+          <div class="card">
+            <img style="width:100%;height:auto;" src="https://imgd.aeplcdn.com/0x0/n/cw/ec/39015/punch-exterior-right-front-three-quarter-2.jpeg?isig=0">
+            <div class="card-body">
+              <h5 class="card-title">Punch</h5>
+              <p class="card-text">The indigenous carmaker's latest model, the Tata Punch, is what one could call a mini SUV. It's a sub-compact SUV and, at first glance, comes across as a spacious well-designed vehicle with modern up-to-date elements and functionality.Tata Punch. Tata Punch is a 5 seater Compact SUV available in a price range of ₹ 5.93 - 9.49 Lakh. It is available in 22 variants, 1199 cc engine option.</p>
+              <p class="card-text"><small class="text-muted"></small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img style="width:100%;height:auto;" src="https://media.zigcdn.com/media/model/2021/Feb/tata-nexon-4_360x240.jpg">
+            <div class="card-body">
+              <h5 class="card-title">Nexon</h5>
+              <p class="card-text">Tata Nexon has been loved enormously for its unique advantages such as turbocharged powertrains and best safety features across all variants. With the Nexon continuing to rule the compact SUV market, you might be wondering what makes it one of the most successful cars in India.Tata Nexon is a 5 seater SUV available in a price range of Rs. 7.60 - 13.95 Lakh*. It is available in 68 variants, 2 engine options that are BS6 compliant.</p>
+              <p class="card-text"><small class="text-muted"></small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img style="width:100%;height:auto;" src="https://images.moneycontrol.com/static-mcnews/2020/02/gravitas-banner-desktop.jpg?impolicy=website&width=770&height=431">
+            <div class="card-body">
+              <h5 class="card-title">Gravitas</h5>
+              <p class="card-text">The Tata Gravitas is expected to launch in January 2021 after it was showcased at the Auto Expo 2020 in a production-ready form. It is a three-row version of the regular Harrier, with minor changes. Here is its first spy shot sans camouflage. Only the rear portion of the Gravitas is visible in this spy shot.And we expect its pricing to start at Rs 15 lakh ex-showroom if it comes in the base XE trim. But spec for spec, expect the new Safari to cost around a lakh more than the Tata Harrier.</p>
+              <p class="card-text"><small class="text-muted"></small></p>
+            </div>
+          </div>
+        </div>
+        </div></div>
+        <footer>
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <div class="container"><p>© 2022 Jatin Saini, Inc. All rights reserved.</p></div>
+            <ul class="list-unstyled d-flex">
+              
+            </ul>
+            <div style="font-size: 65px;align-items:center;justify-content:center;" class="container">
+            <a href="#"><i style="color: black;" class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i style="color: black;" class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i style="color: black;" class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i style="color: black;" class="fa-brands fa-linkedin"></i></a>
+          </div>
+          </div>
+
+        </footer>
+     
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

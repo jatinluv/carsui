@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cars UI</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <script
+      src="https://kit.fontawesome.com/a8611c3a1b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <img
+          style="
+            margin-left: 2px;
+            border-radius: 30%;
+            height: 60px;
+            width: 70px;
+            background-color: black;
+          "
+          src="https://media.istockphoto.com/photos/generic-modern-suv-car-in-concrete-garage-picture-id1307086567?b=1&k=20&m=1307086567&s=170667a&w=0&h=NjcM6LIOkmfhyqH-zrbFU7pHCPxIABvNhWaOElm_P-E="
+          alt=""
+        />
+        <!-- https://carsales.pxcrush.net/car/spec/S00061BW.jpg?pxc_method=gravityfill&pxc_bgtype=self&pxc_size=720,480&watermark=1900147745 -->
+
+        <a
+          style="font-family: 'Baloo Bhai 2', cursive; font-size: 40px"
+          class="navbar-brand"
+          href="index.html"
+          >Cars UI</a
+        >
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+              Cars UI
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="toyota.html">Toyota</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hyundai.html">Hyundai</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="suzuki.html">Suzuki</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tata.html">Tata Motors </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  More Options
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li>
+                    <a
+                      href="https://www.cardekho.com/mostpopularcars"
+                      class="dropdown-item"
+                      href="#"
+                      >Models</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="purchase.html">Purchase</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a href="contact.html" class="dropdown-item" href="#"
+                      >Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <a href="https://www.cars.com/"
+                ><button class="btn btn-outline-danger" type="submit">
+                  Search
+                </button></a
+              >
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <br /><br /><br />
+    <br />
+    <section id="toyota1">
+      <div class="container">
+        <strong
+          ><h1
+            style="
+              font-family: 'Baloo Bhai', cursive;
+              font-size: 50px;
+              align-items: center;
+              justify-content: center;
+            "
+          >
+            Toyota
+          </h1></strong
+        >
+
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                style="width: 100%; height: auto"
+                src="https://www.motorbeam.com/wp-content/uploads/Toyota-Fortuner-TRD-Limited-Edition.jpg"
+                class="d-block w-100"
+                alt="https://www.motorbeam.com/wp-content/uploads/Toyota-Fortuner-TRD-Limited-Edition.jpg"
+              />
+              <div
+                style="color: black"
+                class="carousel-caption d-none d-md-block"
+              >
+                <strong><h2>Fortuner</h2></strong>
+                <a
+                  href="https://www.toyotabharat.com/campaign/fortuner/?utm_campaign=fortunerao2022&utm_source=google&utm_medium=search&utm_term=cpc&utm_content=ao&agency_code=HAKXX&gclid=Cj0KCQjwxIOXBhCrARIsAL1QFCYs47Gvv3uRzKjRWAmDNFZABWYu76gjDyehlKZRKQNKKV_vdDCe7vEaAuKDEALw_wcB"
+                  ><button class="btn btn-warning">More Models</button></a
+                >
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                style="width: 100%; height: auto"
+                src="https://www.wardsauto.com/sites/wardsauto.com/files/styles/article_featured_retina/public/Toyota%20Corolla%20main%20cropped_0.jpg?itok=D5G2fY-E"
+                class="d-block w-100"
+                alt="https://www.motorbeam.com/wp-content/uploads/Toyota-Fortuner-TRD-Limited-Edition.jpg"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h1>Corolla</h1>
+                <p></p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                style="width: 100%; height: auto"
+                src="https://imgd.aeplcdn.com/0x0/n/cw/ec/41217/toyota-vellfire-right-front-three-quarter5.jpeg"
+                class="d-block w-100"
+                alt="https://www.motorbeam.com/wp-content/uploads/Toyota-Fortuner-TRD-Limited-Edition.jpg"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h1 style="color: black">Vellfire</h1>
+                <p></p>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div>
+            <div class="container-fluid py-2">
+              <h1 class="display-5 fw-bold"></h1>
+              <p>
+                Toyota Motor Corporation (commonly known as simply Toyota) is a
+                Japanese multinational automotive manufacturer headquartered in
+                Toyota City, Aichi, Japan. It was founded by Kiichiro Toyoda and
+                incorporated on August 28, 1937. Toyota is one of the largest
+                automobile manufacturers in the world, producing about 10
+                million vehicles per year.
+              </p>
+              <a href="https://en.wikipedia.org/wiki/Toyota"
+                ><button class="btn btn-primary btn-lg" type="button">
+                  More
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="card-group">
+            <div class="card">
+              <img
+                src="https://thenewswheel.com/wp-content/uploads/2014/01/2014-Toyota-FJ-Cruiser.jpg"
+              />
+              <div class="card-body">
+                <h5 class="card-title">RAV4</h5>
+                <p class="card-text">
+                  In terms of popularity, the RAV4 is Toyota's best-selling
+                  vehicle and the best-selling non-pickup truck in the U.S. It
+                  boasts a Dynamic Force 2.5-liter inline-four-cylinder engine
+                  with an 8-speed Direct-Shift automatic transmission.
+                </p>
+                <p class="card-text"><small class="text-muted"></small></p>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="https://www.drivespark.com/car-image/640x480x100/car/toyota-glanza-facelift.jpg"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Glanza</h5>
+                <p class="card-text">
+                  Toyota Glanza is a powerful yet fuel-efficient hatchback car.
+                  The 5 seater subcompact car is just as stylish on the inside
+                  as it is on the outside.The on-road price of Glanza top model
+                  in Delhi is ₹ 9.91 Lakh. The on-road price of Glanza V AMT
+                  Petrol is ₹ 9.91 Lakh. The on road price is made up of
+                  ex-showroom price, RTO registration, road tax and insurance
+                  amount.
+                </p>
+                <p class="card-text"><small class="text-muted"></small></p>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="https://www.toyoland.com/photos/tundra/2022/uglymobile.jpg"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tundra</h5>
+                <p class="card-text">
+                  The 2019 Toyota Tundra is an excellent purchase for anyone
+                  looking to get a full-size truck. The performance and
+                  reliability of the Tundra are hard to beat. It also provides
+                  plenty of safety features to keep you and your passengers
+                  protected.
+                </p>
+                <p class="card-text"><small class="text-muted"></small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <footer>
+      <div
+        class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+      >
+        <div class="container">
+          <p>© 2022 Jatin Saini, Inc. All rights reserved.</p>
+        </div>
+        <ul class="list-unstyled d-flex"></ul>
+        <div
+          style="font-size: 65px; align-items: center; justify-content: center"
+          class="container"
+        >
+          <a href="index.html"
+            ><i style="color: black" class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="index.html"
+            ><i style="color: black" class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="index.html"
+            ><i style="color: black" class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="index.html"
+            ><i style="color: black" class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
